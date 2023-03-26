@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { ReactNode } from "react";
 import { DarkLayout } from "../layouts/DarkLayout";
 import { MainLayout } from "../layouts/MainLayout";
 
@@ -18,13 +19,9 @@ export default function AboutPage() {
   );
 }
 
-//forma alternativa de  retornar una page 
-//con multiples layout aunque lo mas facil 
-// es hacer un doble wrapper
 
-//para que funcione hay una configuracion en _app.js
 
-AboutPage.getLayout = function getLayout(page) {
+AboutPage.getLayout = function getLayout(page: ReactNode) {
   return (
     <MainLayout>
       <DarkLayout>

@@ -3,3 +3,9 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+
+.active{
+  color: blue;
+  pointer-events: none;
+};
